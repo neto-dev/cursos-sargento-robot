@@ -1,0 +1,5 @@
+/vendor
+go.mod
+*gin-bin
+.idea
+*.DS_Store
