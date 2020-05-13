@@ -1,6 +1,6 @@
-#Episodio #1
+# Episodio #1
 
-###Puntos a completar en el video.
+### Puntos a completar en el video.
 - [x] Explicar Dinámica de los videos 
 - [x] Explicación basica de funcionamiento Go
 - [x] Explicar por que Echo
