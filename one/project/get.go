@@ -3,14 +3,15 @@ package project
 import "github.com/labstack/echo/v4"
 
 func Get(){
-	e:= echo.New()
-	e.GET("/get", func(context echo.Context) error {
-		return context.HTML(200, "<h1>Hola Mundo desde Get!</h1>")
+	e := echo.New()
+	e.GET("/get", func(contex echo.Context) error {
+		return contex.HTML(200, "<b>Hola desde Get</b>")
 	})
 
-	e.GET("/get/:id", func(context echo.Context) error {
-		id := context.Param("id")
-		return context.HTML(200, "<h1>Hola Mundo desde Get!</h1><br><h2> Este es el id: " + id + "<h2>")
+	e.GET("/get/:parametro", func(contex echo.Context) error {
+		parametro:= contex.Param("parametro")
+		queryParam := contex.QueryParam("query")
+		return contex.HTML(200, "<b>Hola desde Get Con parametro: </b> " + parametro + " Query Param: " + queryParam)
 	})
 
 	e.Start(":1234")

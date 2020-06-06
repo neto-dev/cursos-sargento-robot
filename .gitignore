@@ -3,3 +3,4 @@ go.mod
 *gin-bin
 .idea
 *.DS_Store
+*.env
